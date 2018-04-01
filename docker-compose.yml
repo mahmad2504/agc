@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+   server:
+      build: ./agc-server
+      container_name: server
+      ports:
+        -  "80:80"
+   schedular:
+      build: ./agc-schedular
+      container_name: schedular
